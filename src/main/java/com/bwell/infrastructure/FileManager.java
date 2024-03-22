@@ -16,6 +16,9 @@ import java.nio.charset.StandardCharsets;
  */
 public class FileManager {
 
+private FileManager() {
+}
+
     /**
      * Reads a FHIR resource from a file
      *
