@@ -19,6 +19,9 @@ public class FhirJsonExporter {
      * @param resource: resource
      * @return json
      */
+    private FhirJsonExporter() {
+    }
+    
     public static String getResourceAsJson(String fhirVersion, IBaseResource resource) {
         FhirVersionEnum fhirVersionEnum = FhirVersionEnum.valueOf(fhirVersion);
         FhirContext fhirContext = fhirVersionEnum.newContext();
