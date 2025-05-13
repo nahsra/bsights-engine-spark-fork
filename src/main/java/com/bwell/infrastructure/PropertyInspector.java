@@ -9,6 +9,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class PropertyInspector {
+    private PropertyInspector() {
+    }
+    
     public static String getAllPropertiesAsJson(Object fooObject) {
         ObjectMapper mapper = new ObjectMapper();
         try {
